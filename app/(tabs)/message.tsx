@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const Wallet = () => {
+const Message = () => {
   return (
     <View>
       <Text>Wallet</Text>
@@ -9,4 +9,4 @@ const Wallet = () => {
   );
 };
 
-export default Wallet;
+export default Message;

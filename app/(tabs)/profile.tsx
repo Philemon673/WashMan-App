@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const Services = () => {
+const Profile = () => {
   return (
     <View>
       <Text>services</Text>
@@ -9,4 +9,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Profile;

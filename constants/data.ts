@@ -1,10 +1,19 @@
 import { icons } from "@/constants/icon";
+import {
+  X,
+  MoreVertical,
+  Briefcase,
+  HelpCircle,
+  ShieldCheck,
+  Globe,
+  LogOut,
+} from "lucide-react-native";
 
 export const tabs: AppTab[] = [
   { name: "index", title: "Home", icon: icons.home },
   { name: "wallet", title: "Wallet", icon: icons.wallet },
   { name: "activity", title: "Activity", icon: icons.activity },
-  { name: "setting", title: "Setting", icon: icons.setting },
+  { name: "account", title: "Account", icon: icons.account },
 ];
 
 export const HOME_USER = {
@@ -103,5 +112,75 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
     billing: "Yearly",
     renewalDate: "2026-04-02T10:00:00.000Z",
     color: "#b8e8d0",
+  },
+];
+
+// ── Booking Data ───────────────────────────────────────────────────────────
+const BOOKINGS = [
+  {
+    id: "1",
+    name: "Sarah Jenkins",
+    service: "Express Wash",
+    distance: "3.2 miles away",
+    status: "Pending Request",
+    statusColor: "#3b82f6",
+    time: "2m ago",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80",
+    avatarBg: "#e0f2fe",
+  },
+  {
+    id: "2",
+    name: "Michael Chen",
+    service: "Deluxe Ironing",
+    distance: "1.5 miles away",
+    status: "Accepted",
+    statusColor: "#22c55e",
+    time: "15m ago",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+    avatarBg: "#dbeafe",
+  },
+  {
+    id: "3",
+    name: "Jessica Williams",
+    service: "Dry Cleaning",
+    distance: "0.8 miles away",
+    status: "New Order",
+    statusColor: "#3b82f6",
+    time: "1h ago",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80",
+    avatarBg: "#fef3c7",
+  },
+];
+
+// ------------- for the single provider navbar profile -------------------------------
+
+const MENU_ITEMS = [
+  {
+    key: "services",
+    label: "Services & Pricing",
+    route: "/singleprovider-dashboard/profile/services",
+    Icon: Briefcase,
+    iconColor: "#2563EB",
+  },
+  {
+    key: "help",
+    label: "Help & support",
+    route: "/singleprovider-dashboard/profile/Help&Support",
+    Icon: HelpCircle,
+    iconColor: "#3B82F6",
+  },
+  {
+    key: "privacy",
+    label: "Privacy & Security",
+    route: "/singleprovider-dashboard/profile/privacy&security",
+    Icon: ShieldCheck,
+    iconColor: "#10B981",
+  },
+  {
+    key: "language",
+    label: "Language",
+    route: "/singleprovider-dashboard/profile/Language",
+    Icon: Globe,
+    iconColor: "#06B6D4",
   },
 ];

@@ -115,8 +115,42 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
   },
 ];
 
+
+
+// ------------- for the single provider navbar profile -------------------------------
+
+const MENU_ITEMS = [
+  {
+    key: "services",
+    label: "Services & Pricing",
+    route: "/singleprovider-dashboard/profile/services",
+    Icon: Briefcase,
+    iconColor: "#2563EB",
+  },
+  {
+    key: "help",
+    label: "Help & support",
+    route: "/singleprovider-dashboard/profile/Help&Support",
+    Icon: HelpCircle,
+    iconColor: "#3B82F6",
+  },
+  {
+    key: "privacy",
+    label: "Privacy & Security",
+    route: "/singleprovider-dashboard/profile/privacy&security",
+    Icon: ShieldCheck,
+    iconColor: "#10B981",
+  },
+  {
+    key: "language",
+    label: "Language",
+    route: "/singleprovider-dashboard/profile/Language",
+    Icon: Globe,
+    iconColor: "#06B6D4",
+  },
+];
 // ── Booking Data ───────────────────────────────────────────────────────────
-const BOOKINGS = [
+export const BOOKINGS = [
   {
     id: "1",
     name: "Sarah Jenkins",
@@ -149,38 +183,5 @@ const BOOKINGS = [
     time: "1h ago",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80",
     avatarBg: "#fef3c7",
-  },
-];
-
-// ------------- for the single provider navbar profile -------------------------------
-
-const MENU_ITEMS = [
-  {
-    key: "services",
-    label: "Services & Pricing",
-    route: "/singleprovider-dashboard/profile/services",
-    Icon: Briefcase,
-    iconColor: "#2563EB",
-  },
-  {
-    key: "help",
-    label: "Help & support",
-    route: "/singleprovider-dashboard/profile/Help&Support",
-    Icon: HelpCircle,
-    iconColor: "#3B82F6",
-  },
-  {
-    key: "privacy",
-    label: "Privacy & Security",
-    route: "/singleprovider-dashboard/profile/privacy&security",
-    Icon: ShieldCheck,
-    iconColor: "#10B981",
-  },
-  {
-    key: "language",
-    label: "Language",
-    route: "/singleprovider-dashboard/profile/Language",
-    Icon: Globe,
-    iconColor: "#06B6D4",
   },
 ];
